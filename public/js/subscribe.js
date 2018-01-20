@@ -1,5 +1,4 @@
 /* global socket , $ ,pv */
-
 socket.on('coinmarketcap', function(data) {
 	var data = JSON.parse(data);
 	//marcetcap
@@ -9,7 +8,6 @@ socket.on('coinmarketcap', function(data) {
 		$(cl).removeClass('bid ask').addClass(bidAsk).text(this.percent_change_24h + '%');
 	});
 });
-
 socket.on('cc_btc', function(data) {
 	var data = JSON.parse(data);
 	var $el = $('#btc_cc');
@@ -40,8 +38,6 @@ socket.on('cc_xrp', function(data) {
 	var $el = $('#xrp_cc');
 	pv.util.set($el,pv.util.round(data.rate));
 });
-
-
 socket.on('bf', function(data) {
 	var data = JSON.parse(data);
 	var $el = $('#btc_bf');

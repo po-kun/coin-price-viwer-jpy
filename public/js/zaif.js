@@ -8,7 +8,7 @@ $(function(){
 	btc_jpy.addEventListener('message', function (event) {
 		var $el = $('#btc_zaif');
 		var data = JSON.parse(event.data);
-		pv.util.set($el,pv.util.round(data.last_price.price),data.last_price.action);
+		pv.util.set($el,pv.util.round(data.last_price.price));
 	});
 	
 	//btc_jpy
@@ -16,7 +16,7 @@ $(function(){
 	mona.addEventListener('message', function (event) {
 		var $el = $('#mona_zaif');
 		var data = JSON.parse(event.data);
-		pv.util.set($el,pv.util.round(data.last_price.price),data.last_price.action);
+		pv.util.set($el,pv.util.round(data.last_price.price));
 	});
 	
 	//xem
@@ -24,7 +24,7 @@ $(function(){
 	xem.addEventListener('message', function (event) {
 		var $el = $('#xem_zaif');
 		var data = JSON.parse(event.data);
-		pv.util.set($el,pv.util.round(data.last_price.price),data.last_price.action);
+		pv.util.set($el,pv.util.round(data.last_price.price));
 	});
 	
 	//BCH
@@ -32,7 +32,7 @@ $(function(){
 	bch.addEventListener('message', function (event) {
 		var $el = $('#bch_zaif');
 		var data = JSON.parse(event.data);
-		pv.util.set($el,pv.util.round(data.last_price.price),data.last_price.action);
+		pv.util.set($el,pv.util.round(data.last_price.price));
 	});
 	
 	//ETH
@@ -40,6 +40,6 @@ $(function(){
 	eth.addEventListener('message', function (event) {
 		var $el = $('#eth_zaif');
 		var data = JSON.parse(event.data);
-		pv.util.set($el,pv.util.round(data.last_price.price),data.last_price.action);
+		pv.util.set($el,pv.util.round(data.last_price.price));
 	});
 });

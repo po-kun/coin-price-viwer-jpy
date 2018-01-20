@@ -41,17 +41,8 @@ var pv = {
 			var formated = pv.util.format(val);
 			
 			if(text != formated) {
-				$el.text(formated).delay(100).fadeOut(100).fadeIn(100);
+				$el.text(formated).fadeOut(100).fadeIn(100);
 			}
-		},
-		setPercentage : function ($el,val,high) {
-			var text = $el.text();
-			var formated = pv.util.format(val);
-			var sagaku = high - val;
-			
-			var per = pv.util.round(val / high * 100);
-			
-			$el.text('te');
 		}
 	}
 };

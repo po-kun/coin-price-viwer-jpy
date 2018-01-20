@@ -1,6 +1,6 @@
 const cc = require('./module/cc');
 const bf = require('./module/bf');
-const marcetcap = require('./module/marcetcap');
+const marcetcap = require('./module/ccm');
 
 exports.subscribe = function(io) {
 	marcetcap.subscribe(io);
