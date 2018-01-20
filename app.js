@@ -15,10 +15,11 @@ app.get('/', function(req, res) {
 	res.render('index');
 });
 
-//Socket接続
-io.on('connection', (socket) => {
-	subs.subscribe(io);
+app.get('/readme', function(req, res) {
+	res.render('readme');
 });
+
+subs.subscribe(io);
 
 http.listen(PORT, () => {
 	console.log(`listening on *:${PORT}`);

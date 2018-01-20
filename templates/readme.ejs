@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./element/head') %>
+<body>
+	<%- include('./element/nav') %>
+	
+	<div class="container">
+		
+		<div class="row mb-5">
+			<div class="col">
+				<h4 class="mb-3"><i class="fa fa-info-circle fa-fw" aria-hidden="true"></i>当サイトについて</h4>
+				<p>国内主要取引所の価格データを表示しています。</p>
+				<p>価格が最新のものであることは保障できません。</p>
+				<p>変動比は<a target="_blank" class="text-muted" href="https://coinmarketcap.com/">CoinMarketCap</a>から取得しているため国内取引所の変動比を示すものではありません。</p>
+				<p>WebSocketを使用しているため一部ブラウザでは動作しない場合があります。</p>
+			</div>
+		</div>
+		
+		<div class="row mb-5">
+			<div class="col">
+				<h5 class="mb-3">当サイトで使用するデータは下記取引所、CoinMarketCapから取得しています。</h5>
+			
+				<div class="list-group">
+				  <a href="https://bitflyer.jp?bf=2ymlxfmr" rel="nofollow" class="list-group-item list-group-item-action">BitFlyer</a>
+				  <a href="https://bitbank.cc/" rel="nofollow" class="list-group-item list-group-item-action">BitBank</a>
+				  <a href="https://coincheck.com/" rel="nofollow" class="list-group-item list-group-item-action">CoinCheck</a>
+				  <a href="https://zaif.jp?ac=pcpi5vojx9" rel="nofollow" class="list-group-item list-group-item-action">Zaif</a>
+				  <a href="https://coinmarketcap.com/" class="list-group-item list-group-item-action">CoinMarketCap</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col">
+				<h5 class="mb-3">ソースはgithubで公開しています。</h5>
+				<p><a class="text-muted" href="https://github.com/po-kun/coin-price-viwer-jpy"><i class="fa fa-3x fa-github-square" aria-hidden="true"></i></a></p>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<%- include('./element/footer') %>
+	<%- include('./element/script') %>
+</body>
+</html>
