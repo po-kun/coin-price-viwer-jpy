@@ -5,7 +5,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/po-kun/bf_price_view.git"
+    "url": "git+https://github.com/po-kun/coin-price-viwer-jpy.git"
   },
   "author": "po-kun",
   "license": "MIT",
@@ -16,9 +16,9 @@
     "socket.io": "^2.0.4"
   },
   "bugs": {
-    "url": "https://github.com/po-kun/bf_price_view/issues"
+    "url": "https://github.com/po-kun/coin-price-viwer-jpyissues"
   },
-  "homepage": "https://github.com/po-kun/bf_price_view#readme",
+  "homepage": "https://github.com/po-kun/coin-price-viwer-jpy#readme",
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
