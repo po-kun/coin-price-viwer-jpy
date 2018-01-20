@@ -5,6 +5,13 @@
 	<%- include('./element/nav') %>
 	<%- include('./element/content') %>
 	<%- include('./element/footer') %>
+	
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+	    var socket = io();
+	</script>
+	
+	<%- include('./element/common_scripts') %>
 	<%- include('./element/script') %>
 </body>
 </html>

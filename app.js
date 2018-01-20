@@ -10,6 +10,7 @@ app.set('view engine', 'ejs');
 app.set('views', __dirname + '/templates');
 app.use('/static', express.static(__dirname + '/public'));
 app.locals.vars = vars;
+subs.subscribe(io);
 
 app.get('/', function(req, res) {
 	res.render('index');
@@ -18,8 +19,6 @@ app.get('/', function(req, res) {
 app.get('/readme', function(req, res) {
 	res.render('readme');
 });
-
-subs.subscribe(io);
 
 http.listen(PORT, () => {
 	console.log(`listening on *:${PORT}`);
