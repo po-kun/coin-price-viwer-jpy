@@ -1,0 +1,35 @@
+{
+	"title": "仮想通貨監視所",
+	"curencyExchangers": {
+	    "BF": "BitFlyer",
+	    "CC": "CoinCheck",
+	    "BB": "BitBank",
+	    "Zaif": "Zaif"
+	},
+	"tables": {
+		"BTC": {
+			"rows": ["BF", "CC", "BB", "Zaif"],
+			"prefix": "btc_"
+		},
+		"ETH": {
+			"rows": ["CC", "Zaif"],
+			"prefix": "eth_"
+		},
+		"BCH": {
+			"rows": ["CC", "BB", "Zaif"],
+			"prefix": "bch_"
+		},
+		"XEM": {
+			"rows": [ "CC",  "Zaif"],
+			"prefix": "xem_"
+		},
+		"MONA": {
+			"rows": ["BB", "Zaif"],
+			"prefix": "mona_"
+		},
+		"XRP": {
+			"rows": ["CC", "BB"],
+			"prefix": "xrp_"
+		}
+	}
+}
